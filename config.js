@@ -24,7 +24,7 @@ const config = {
     // OWNER
     Nomor_Owner: 6282296959969, // Nomor Whatsapp Kamu
     Nama_Owner: `Ahmad`, // Nama Kamu
-    Nomor_Bot: 6285167684162, // Nomor Botnya
+    Nomor_Bot: 6285166532406, // Nomor Botnya
     Nama_Bot: `ASA BOT`, // Nama Botnya
     Password_Bot: `brainxiex`, // Password Bot (Bebas)
     
