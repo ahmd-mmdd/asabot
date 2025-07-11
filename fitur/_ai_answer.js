@@ -4,7 +4,7 @@ async function action(sock, m, store) {
     const {chat: id, body, arg, isOwner, nyarios, sender, pushName, isGroup, cmd, awalan} = m;
     const {Prefix,banner,Nama_Bot,Nomor_Owner,apikey,baseURL} = config;
     const {isset,fs,sleep} = func
-
+    if(!fs.cek('./database/aionchat')) return 0;
     const isTempatRoleplay = id == `628979059392-1614471575@g.us`;
     const isTempatGame = id == "628979059392-1614471493@g.us" || isTempatRoleplay;
     const isTempatUtama = id == `628979059392-1594298364@g.us` || id == `628979059392-1606031648@g.us` || isTempatGame;

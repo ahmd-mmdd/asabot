@@ -29,7 +29,7 @@ const config = {
     Password_Bot: `brainxiex`, // Password Bot (Bebas)
     
     // AUTH SETTINGS
-    pakeQRweb: false, // Untuk Open Socket Websitenya
+    pakeQRweb: true, // Untuk Open Socket Websitenya
     port: 13070, // Port Website Yang Akan Di Buka
     printQRInTerminal: true, // Tampilkan QR CODE
     usecode: false, // Tampilkan Pairing Code

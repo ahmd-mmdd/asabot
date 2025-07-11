@@ -9,12 +9,12 @@ async function message(sock, m, store) {
 
     
     if(isOwner){
-        if(sock.aidisable){
-            sock.aidisable = false;
+        if(fs.cek('./database/aionchat')){
+            fs.del('./database/aionchat')
             nyarios("auto ai di dalam chat di matikan")
         } 
         else{
-            sock.aidisable = true;
+            fs.save('./database/aionchat','barqahgay')
             nyarios("auto ai di dalam chat di aktikan")
         }
         
