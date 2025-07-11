@@ -1,3 +1,18 @@
+const { execSync } = require('child_process');
+
+try {
+  require.resolve('bx-baileys');
+} catch (err) {
+  console.log('\n📦 bx-baileys belum terinstal, memulai instalasi...\n');
+  try {
+    execSync('npm install bx-baileys --legacy-peer-deps', { stdio: 'inherit' });
+    console.log('\n✅ bx-baileys berhasil diinstall\n');
+  } catch (error) {
+    console.error('\n❌ Gagal install bx-baileys:', error);
+    process.exit(1);
+  }
+}
+
 const { on } = require("events");
 
 async function run() {
